@@ -9,13 +9,14 @@
 #ifndef BLTrasitionAnimatorConfig_h
 #define BLTrasitionAnimatorConfig_h
 
-#define TransitionDuration 1  //翻转动画执行的时间间隔
+#define TransitionDuration 0.5  //翻转动画执行的时间间隔
 
 typedef NS_OPTIONS(NSUInteger, BLTransitionAnimatorStyle) {
     BLTransitionAnimatorTop= 0,//从顶部滑入
     BLTransitionAnimatorLeft, //从左边滑入
     BLTransitionAnimatorBottom, //从底部滑入
-    BLTransitionAnimatorRight //从右边滑入
+    BLTransitionAnimatorRight,//从右边滑入
+    BLTransitionAnimatorCustom//自定义动画
 };
 
 typedef NS_OPTIONS(NSUInteger, BLTabBarSlidingDirectionStyle) {

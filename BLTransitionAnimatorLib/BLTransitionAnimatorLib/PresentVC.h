@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PresentVC.h
 //  BLTransitionAnimatorLib
 //
 //  Created by 冰泪 on 2017/6/22.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLTransitionAnimator.h"
 
-@interface ViewController : UIViewController
-
+@interface PresentVC : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end
-

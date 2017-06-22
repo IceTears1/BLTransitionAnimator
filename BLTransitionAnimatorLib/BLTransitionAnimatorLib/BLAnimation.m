@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  BLAnimation.m
 //  BLTransitionAnimatorLib
 //
 //  Created by 冰泪 on 2017/6/22.
 //  Copyright © 2017年 冰泪. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BLAnimation.h"
 
-@interface ViewController : UIViewController
-
+@implementation BLAnimation
 
 @end
-

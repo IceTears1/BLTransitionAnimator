@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PushSecondVC.h
 //  BLTransitionAnimatorLib
 //
 //  Created by 冰泪 on 2017/6/22.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PushSecondVC : UIViewController
 
 @end
-

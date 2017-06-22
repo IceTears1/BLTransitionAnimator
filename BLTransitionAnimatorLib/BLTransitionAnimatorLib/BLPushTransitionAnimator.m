@@ -171,7 +171,29 @@
             }];
         }
             break;
+        case BLTransitionAnimatorCustom:{
             
+            if (isPush) {
+                //代码区域
+            } else {
+                //代码区域
+            }
+            [UIView animateWithDuration:transitionDuration animations:^{
+                
+                if (isPush) {
+                     //代码区域
+                } else {
+                     //代码区域
+                }
+            } completion:^(BOOL finished) {
+                
+                BOOL wasCancelled = [transitionContext transitionWasCancelled];
+                if (wasCancelled)
+                    [toView removeFromSuperview];
+                [transitionContext completeTransition:!wasCancelled];
+            }];
+        }
+            break;
             
         default:
             break;
