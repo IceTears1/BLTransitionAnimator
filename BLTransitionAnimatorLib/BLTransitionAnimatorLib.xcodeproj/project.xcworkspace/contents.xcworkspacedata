@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:&#x7ffb;&#x9875;&#x6548;&#x679c;.xcodeproj">
+      location = "self:BLTransitionAnimatorLib.xcodeproj">
    </FileRef>
 </Workspace>

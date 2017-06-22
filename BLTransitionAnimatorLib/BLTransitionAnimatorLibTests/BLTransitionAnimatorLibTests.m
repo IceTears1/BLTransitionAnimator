@@ -1,18 +1,18 @@
 //
-//  ____Tests.m
-//  翻页效果Tests
+//  BLTransitionAnimatorLibTests.m
+//  BLTransitionAnimatorLibTests
 //
-//  Created by 冰泪 on 2017/6/16.
+//  Created by 冰泪 on 2017/6/22.
 //  Copyright © 2017年 冰泪. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ____Tests : XCTestCase
+@interface BLTransitionAnimatorLibTests : XCTestCase
 
 @end
 
-@implementation ____Tests
+@implementation BLTransitionAnimatorLibTests
 
 - (void)setUp {
     [super setUp];

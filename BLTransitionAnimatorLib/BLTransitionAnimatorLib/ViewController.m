@@ -50,15 +50,15 @@
     
     //初始化手势过渡的代理
     bl_Interaction = [BLTransitionInteraction interactiveTransitionWithTransitionType:BLTransitionTypePresent GestureDirection:BLGestureDirectionRight];
-//    typeof(self)weakSelf = self;
-//    bl_Interaction.presentConifg = ^(){
-//        [weakSelf present];
-//    };
+    //    typeof(self)weakSelf = self;
+    //    bl_Interaction.presentConifg = ^(){
+    //        [weakSelf present];
+    //    };
     //给当前控制器的视图添加手势
     [bl_Interaction addPanGestureForViewController:self.navigationController];
     
     
-   }
+}
 
 -(void)aaa{
     SecondViewController *two = [[SecondViewController alloc]init];
@@ -104,10 +104,10 @@
     return bl_Interaction;
 }
 //- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
-//    
-//   
+//
+//
 //    return bl_Interaction.interation ? bl_Interaction : nil;
-//    
+//
 //}
 - (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator{
     return bl_Interaction.interation ? bl_Interaction : nil;
