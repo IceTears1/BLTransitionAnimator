@@ -1,19 +1,36 @@
 # BLTransitionAnimator
 
-
 使用方法
 
-导入头文件
+1>导入头文件
 #import“BLTransitionAnimator.h”
-使用 
-- (void)BL_pushViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag;
- - （void）BL_presentViewController：（UIViewController *）vc AnimatorStyle：（BLTransitionAnimatorStyle）type animated：（BOOL）flag;
- 
-跳转使用以上2个方法进行跳转目前仅仅提供了四中转场方式当然预留了自定义的方法可以自己定义转场的动画使用起来更方便
 
+2>跳转方法
 
+//模态跳转
+[self BL_presentViewController:nav AnimatorStyle:bl_Type animated:YES];
+//push跳转
+[self.navigationController BL_pushViewController:vc AnimatorStyle:bl_Type animated:YES];
 
+3>目前只提供了4中+一个自定义的方法  自定义动画应该能满足大部分人的需求
+typedef NS_OPTIONS(NSUInteger, BLTransitionAnimatorStyle) {
+BLTransitionAnimatorTop= 0,//从顶部滑入
+BLTransitionAnimatorLeft, //从左边滑入
+BLTransitionAnimatorBottom, //从底部滑入
+BLTransitionAnimatorRight,//从右边滑入
+BLTransitionAnimatorCustom//自定义动画
+};
 
-
-自定义动画位置
+4>自定义动画位置
+//修改内部的方法 对toView 和FromeView进行动画即可
 BLDIYTrasitionAnimation.m
+
+5>注意事项
+Presentation/push 时候
+fromView = The presenting view
+toView   = The presented view
+
+Dismissal/pop时候
+
+fromView = The presented view.
+toView   = The presenting view.
