@@ -1,6 +1,8 @@
 # BLTransitionAnimator
-iOS转场动画支持自定义动画简单易用
+
+
 使用方法
+
 导入头文件
 #import“BLTransitionAnimator.h”
 使用 
