@@ -20,7 +20,6 @@
 		8DE578711EFB9AD500DBCE6E /* BLPresentTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE578691EFB9AD500DBCE6E /* BLPresentTransitionAnimator.m */; };
 		8DE578721EFB9AD500DBCE6E /* BLTabBarTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5786B1EFB9AD500DBCE6E /* BLTabBarTransitionAnimator.m */; };
 		8DE578731EFB9AD500DBCE6E /* BLTransitionInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5786D1EFB9AD500DBCE6E /* BLTransitionInteraction.m */; };
-		8DE578741EFB9AD500DBCE6E /* BLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5786F1EFB9AD500DBCE6E /* BLAnimation.m */; };
 		8DE5787E1EFB9AE000DBCE6E /* tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DE578751EFB9AE000DBCE6E /* tab@2x.png */; };
 		8DE5787F1EFB9AE000DBCE6E /* LeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE578771EFB9AE000DBCE6E /* LeftVC.m */; };
 		8DE578801EFB9AE000DBCE6E /* MiddleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE578791EFB9AE000DBCE6E /* MiddleVC.m */; };
@@ -82,8 +81,6 @@
 		8DE5786B1EFB9AD500DBCE6E /* BLTabBarTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTabBarTransitionAnimator.m; sourceTree = "<group>"; };
 		8DE5786C1EFB9AD500DBCE6E /* BLTransitionInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTransitionInteraction.h; sourceTree = "<group>"; };
 		8DE5786D1EFB9AD500DBCE6E /* BLTransitionInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTransitionInteraction.m; sourceTree = "<group>"; };
-		8DE5786E1EFB9AD500DBCE6E /* BLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAnimation.h; sourceTree = "<group>"; };
-		8DE5786F1EFB9AD500DBCE6E /* BLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAnimation.m; sourceTree = "<group>"; };
 		8DE578751EFB9AE000DBCE6E /* tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab@2x.png"; sourceTree = "<group>"; };
 		8DE578761EFB9AE000DBCE6E /* LeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftVC.h; sourceTree = "<group>"; };
 		8DE578771EFB9AE000DBCE6E /* LeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftVC.m; sourceTree = "<group>"; };
@@ -253,8 +250,6 @@
 				8DE5786B1EFB9AD500DBCE6E /* BLTabBarTransitionAnimator.m */,
 				8DE5786C1EFB9AD500DBCE6E /* BLTransitionInteraction.h */,
 				8DE5786D1EFB9AD500DBCE6E /* BLTransitionInteraction.m */,
-				8DE5786E1EFB9AD500DBCE6E /* BLAnimation.h */,
-				8DE5786F1EFB9AD500DBCE6E /* BLAnimation.m */,
 				8DE578941EFBC10200DBCE6E /* UIViewController+BLPresentTrasition.h */,
 				8DE578951EFBC10200DBCE6E /* UIViewController+BLPushTrasition.m */,
 				8DE578971EFBC4BA00DBCE6E /* UINavigationController+BLPushTrasition.h */,
@@ -417,7 +412,6 @@
 				8DE577F91EFB9A3200DBCE6E /* main.m in Sources */,
 				8DE578731EFB9AD500DBCE6E /* BLTransitionInteraction.m in Sources */,
 				8DE578811EFB9AE000DBCE6E /* RightVC.m in Sources */,
-				8DE578741EFB9AD500DBCE6E /* BLAnimation.m in Sources */,
 				8DE578711EFB9AD500DBCE6E /* BLPresentTransitionAnimator.m in Sources */,
 				8DE578801EFB9AE000DBCE6E /* MiddleVC.m in Sources */,
 			);
