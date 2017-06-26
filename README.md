@@ -8,7 +8,10 @@
 使用 
 - (void)BL_pushViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag;
  - （void）BL_presentViewController：（UIViewController *）vc AnimatorStyle：（BLTransitionAnimatorStyle）type animated：（BOOL）flag;
+ 
 跳转使用以上2个方法进行跳转目前仅仅提供了四中转场方式当然预留了自定义的方法可以自己定义转场的动画使用起来更方便
+
+
 
 
 
