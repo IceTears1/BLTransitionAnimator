@@ -9,7 +9,9 @@
 #import "PushVC.h"
 #import "PushSecondVC.h"
 #import "BLTransitionAnimator.h"
-@interface PushVC ()<UINavigationControllerDelegate>
+
+
+@interface PushVC ()
 {
     NSArray *dataSourcePush;
     BLTransitionAnimatorStyle bl_Type;
@@ -21,24 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    dataSourcePush = @[@"top to bottom ",@"bottom to top",@"left to right",@"right to left"];
-    self.navigationController.delegate = self;//push 跳转需要 遵循代理
-}
-
-#pragma mark -
-#pragma mark UINavigationControllerDelegate   //push跳转   的代理
-
-//| ----------------------------------------------------------------------------
-//  The navigation controller tries to invoke this method on its delegate to
-//  retrieve an animator object to be used for animating the transition to the
-//  incoming view controller.  Your implementation is expected to return an
-//  object that conforms to the UIViewControllerAnimatedTransitioning protocol,
-//  or nil if the transition should use the navigation controller's default
-//  push/pop animation.
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
-{
-    
-    return [[BLPushTransitionAnimator alloc]initWithTargetStyle:bl_Type];
+    dataSourcePush = @[@"top to bottom ",@"bottom to top",@"left to right",@"right to left",@"custom"];
+//    self.navigationController.delegate = self;//push 跳转需要 遵循代理
 }
 
 
@@ -89,13 +75,18 @@
             bl_Type = BLTransitionAnimatorRight;
         }
             break;
+        case 4:{
+            bl_Type = BLTransitionAnimatorCustom;
+        }
+            break;
             
         default:
             break;
     }
   
     PushSecondVC *vc = [[PushSecondVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+
+    [self.navigationController BL_pushViewController:vc AnimatorStyle:bl_Type animated:YES];
     
 }
 - (void)didReceiveMemoryWarning {

@@ -9,8 +9,10 @@
 #ifndef BLTransitionAnimator_h
 #define BLTransitionAnimator_h
 
-#import "BLPresentTransitionAnimator.h"//模态转场
-#import "BLPushTransitionAnimator.h"  //push转场
+//#import "BLPresentTransitionAnimator.h"//模态转场
+//#import "BLPushTransitionAnimator.h"  //push转场
+#import "UINavigationController+BLPushTrasition.h"
+#import "UIViewController+BLPresentTrasition.h"
 #import "BLTabBarTransitionAnimator.h"  //tabbar转场
 
 #import "BLTransitionInteraction.h" //手势处理

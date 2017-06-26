@@ -7,6 +7,7 @@
 //
 
 #import "BLPushTransitionAnimator.h"
+#import "BLDIYTrasitionAnimation.h"
 
 @implementation BLPushTransitionAnimator
 - (instancetype)initWithTargetStyle:(BLTransitionAnimatorStyle)animatorStyle
@@ -172,26 +173,26 @@
         }
             break;
         case BLTransitionAnimatorCustom:{
-            
+            BLTransitionType type ;
             if (isPush) {
-                //代码区域
+               
+                type = BLTransitionTypePush;
             } else {
-                //代码区域
+               type = BLTransitionTypePop;
             }
-            [UIView animateWithDuration:transitionDuration animations:^{
-                
-                if (isPush) {
-                     //代码区域
-                } else {
-                     //代码区域
-                }
-            } completion:^(BOOL finished) {
-                
+            BLDIYTrasitionAnimation *diy = [[BLDIYTrasitionAnimation alloc]init];
+            
+            [diy customAnimationType:type ToView:toView FromView:fromView transitionDuration:transitionDuration finished:^(NSString *finished) {
+//                NSLog(@"%@",finished);
                 BOOL wasCancelled = [transitionContext transitionWasCancelled];
                 if (wasCancelled)
                     [toView removeFromSuperview];
                 [transitionContext completeTransition:!wasCancelled];
+
             }];
+           
+
+
         }
             break;
             

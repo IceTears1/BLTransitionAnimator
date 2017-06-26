@@ -10,6 +10,7 @@
 #define BLTrasitionAnimatorConfig_h
 
 #define TransitionDuration 0.5  //翻转动画执行的时间间隔
+typedef void(^BL_AnimationFinished)(NSString *finished);
 
 typedef NS_OPTIONS(NSUInteger, BLTransitionAnimatorStyle) {
     BLTransitionAnimatorTop= 0,//从顶部滑入

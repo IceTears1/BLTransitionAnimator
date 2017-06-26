@@ -7,6 +7,7 @@
 //
 
 #import "BLPresentTransitionAnimator.h"
+#import "BLDIYTrasitionAnimation.h"
 
 @implementation BLPresentTransitionAnimator
 
@@ -174,24 +175,22 @@
             break;
         case BLTransitionAnimatorCustom:{
             
+            BLTransitionType type ;
             if (isPresenting) {
-                //代码区域
+                
+                type = BLTransitionTypePresent;
             } else {
-                //代码区域
+                type = BLTransitionTypeDismiss;
             }
-            [UIView animateWithDuration:transitionDuration animations:^{
-                
-                if (isPresenting) {
-                    //代码区域
-                } else {
-                    //代码区域
-                }
-            } completion:^(BOOL finished) {
-                
+            BLDIYTrasitionAnimation *diy = [[BLDIYTrasitionAnimation alloc]init];
+            
+            [diy customAnimationType:type ToView:toView FromView:fromView transitionDuration:transitionDuration finished:^(NSString *finished) {
+//                NSLog(@"%@",finished);
                 BOOL wasCancelled = [transitionContext transitionWasCancelled];
                 if (wasCancelled)
                     [toView removeFromSuperview];
                 [transitionContext completeTransition:!wasCancelled];
+                
             }];
         }
             break;

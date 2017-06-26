@@ -25,36 +25,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     dataSourcePresent = @[@"top to bottom ",@"bottom to top",@"left to right",@"right to left"];
 }
-#pragma mark -
-#pragma mark UIViewControllerTransitioningDelegate   //模态跳转  的代理
-
-//| ----------------------------------------------------------------------------
-//  The system calls this method on the presented view controller's
-//  transitioningDelegate to retrieve the animator object used for animating
-//  the presentation of the incoming view controller.  Your implementation is
-//  expected to return an object that conforms to the
-//  UIViewControllerAnimatedTransitioning protocol, or nil if the default
-//  presentation animation should be used.
-//
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
-{
-    return [[BLPresentTransitionAnimator alloc] initWithTargetStyle:bl_Type];
-    
-}
-//| ----------------------------------------------------------------------------
-//  The system calls this method on the presented view controller's
-//  transitioningDelegate to retrieve the animator object used for animating
-//  the dismissal of the presented view controller.  Your implementation is
-//  expected to return an object that conforms to the
-//  UIViewControllerAnimatedTransitioning protocol, or nil if the default
-//  dismissal animation should be used.
-//
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
-{
-    return [[BLPresentTransitionAnimator alloc] initWithTargetStyle:bl_Type];
-}
-
-
 
 
 
@@ -110,11 +80,11 @@
     }
     PresentSecondVC *vc = [[PresentSecondVC alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
-    nav.transitioningDelegate = self;//遵循代理
-    [self presentViewController:nav animated:YES completion:^{
-        
-    }];
-    
+//    nav.transitioningDelegate = self;//遵循代理
+//    [self presentViewController:nav animated:YES completion:^{
+//        
+//    }];
+    [self BL_presentViewController:nav AnimatorStyle:bl_Type animated:YES];
     
 }
 

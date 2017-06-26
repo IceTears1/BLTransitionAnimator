@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D49370E1F00B7750035E913 /* BLDIYTrasitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D49370D1F00B7750035E913 /* BLDIYTrasitionAnimation.m */; };
 		8DE577F91EFB9A3200DBCE6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE577F81EFB9A3200DBCE6E /* main.m */; };
 		8DE577FC1EFB9A3200DBCE6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE577FB1EFB9A3200DBCE6E /* AppDelegate.m */; };
 		8DE577FF1EFB9A3200DBCE6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE577FE1EFB9A3200DBCE6E /* ViewController.m */; };
@@ -31,6 +32,8 @@
 		8DE5788E1EFB9C3200DBCE6E /* PresentSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5788D1EFB9C3200DBCE6E /* PresentSecondVC.m */; };
 		8DE578901EFBA31300DBCE6E /* Present.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE5788F1EFBA31300DBCE6E /* Present.storyboard */; };
 		8DE578921EFBA31D00DBCE6E /* Push.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE578911EFBA31D00DBCE6E /* Push.storyboard */; };
+		8DE578961EFBC10200DBCE6E /* UIViewController+BLPushTrasition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE578951EFBC10200DBCE6E /* UIViewController+BLPushTrasition.m */; };
+		8DE578991EFBC4BA00DBCE6E /* UINavigationController+BLPushTrasition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE578981EFBC4BA00DBCE6E /* UINavigationController+BLPushTrasition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D49370C1F00B7750035E913 /* BLDIYTrasitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDIYTrasitionAnimation.h; sourceTree = "<group>"; };
+		8D49370D1F00B7750035E913 /* BLDIYTrasitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDIYTrasitionAnimation.m; sourceTree = "<group>"; };
 		8DE577F41EFB9A3200DBCE6E /* BLTransitionAnimatorLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLTransitionAnimatorLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE577F81EFB9A3200DBCE6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8DE577FA1EFB9A3200DBCE6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +103,10 @@
 		8DE5788D1EFB9C3200DBCE6E /* PresentSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentSecondVC.m; sourceTree = "<group>"; };
 		8DE5788F1EFBA31300DBCE6E /* Present.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Present.storyboard; sourceTree = "<group>"; };
 		8DE578911EFBA31D00DBCE6E /* Push.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Push.storyboard; sourceTree = "<group>"; };
+		8DE578941EFBC10200DBCE6E /* UIViewController+BLPresentTrasition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BLPresentTrasition.h"; sourceTree = "<group>"; };
+		8DE578951EFBC10200DBCE6E /* UIViewController+BLPushTrasition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BLPushTrasition.m"; sourceTree = "<group>"; };
+		8DE578971EFBC4BA00DBCE6E /* UINavigationController+BLPushTrasition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+BLPushTrasition.h"; sourceTree = "<group>"; };
+		8DE578981EFBC4BA00DBCE6E /* UINavigationController+BLPushTrasition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+BLPushTrasition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +255,12 @@
 				8DE5786D1EFB9AD500DBCE6E /* BLTransitionInteraction.m */,
 				8DE5786E1EFB9AD500DBCE6E /* BLAnimation.h */,
 				8DE5786F1EFB9AD500DBCE6E /* BLAnimation.m */,
+				8DE578941EFBC10200DBCE6E /* UIViewController+BLPresentTrasition.h */,
+				8DE578951EFBC10200DBCE6E /* UIViewController+BLPushTrasition.m */,
+				8DE578971EFBC4BA00DBCE6E /* UINavigationController+BLPushTrasition.h */,
+				8DE578981EFBC4BA00DBCE6E /* UINavigationController+BLPushTrasition.m */,
+				8D49370C1F00B7750035E913 /* BLDIYTrasitionAnimation.h */,
+				8D49370D1F00B7750035E913 /* BLDIYTrasitionAnimation.m */,
 			);
 			name = BL_TrasitionAnimationLib;
 			sourceTree = "<group>";
@@ -387,15 +402,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE577FF1EFB9A3200DBCE6E /* ViewController.m in Sources */,
+				8DE578961EFBC10200DBCE6E /* UIViewController+BLPushTrasition.m in Sources */,
 				8DE578721EFB9AD500DBCE6E /* BLTabBarTransitionAnimator.m in Sources */,
 				8DE5788E1EFB9C3200DBCE6E /* PresentSecondVC.m in Sources */,
 				8DE578701EFB9AD500DBCE6E /* BLPushTransitionAnimator.m in Sources */,
 				8DE578851EFB9BFE00DBCE6E /* PushVC.m in Sources */,
 				8DE578881EFB9C1000DBCE6E /* PushSecondVC.m in Sources */,
+				8D49370E1F00B7750035E913 /* BLDIYTrasitionAnimation.m in Sources */,
 				8DE578821EFB9AE000DBCE6E /* TarBarMainVC.m in Sources */,
 				8DE5787F1EFB9AE000DBCE6E /* LeftVC.m in Sources */,
 				8DE577FC1EFB9A3200DBCE6E /* AppDelegate.m in Sources */,
 				8DE5788B1EFB9C2000DBCE6E /* PresentVC.m in Sources */,
+				8DE578991EFBC4BA00DBCE6E /* UINavigationController+BLPushTrasition.m in Sources */,
 				8DE577F91EFB9A3200DBCE6E /* main.m in Sources */,
 				8DE578731EFB9AD500DBCE6E /* BLTransitionInteraction.m in Sources */,
 				8DE578811EFB9AE000DBCE6E /* RightVC.m in Sources */,
@@ -551,7 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BLTransitionAnimatorLib/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = binglei.BLTransitionAnimatorLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,7 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BLTransitionAnimatorLib/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = binglei.BLTransitionAnimatorLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -635,6 +653,7 @@
 				8DE578231EFB9A3200DBCE6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DE578241EFB9A3200DBCE6E /* Build configuration list for PBXNativeTarget "BLTransitionAnimatorLibTests" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +662,7 @@
 				8DE578261EFB9A3200DBCE6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DE578271EFB9A3200DBCE6E /* Build configuration list for PBXNativeTarget "BLTransitionAnimatorLibUITests" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +671,7 @@
 				8DE578291EFB9A3200DBCE6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
