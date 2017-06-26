@@ -11,7 +11,7 @@
 
 #import "BLTransitionAnimator.h"
 
-@interface PresentVC ()<UIViewControllerTransitioningDelegate>
+@interface PresentVC ()
 {
     NSArray *dataSourcePresent;
     BLTransitionAnimatorStyle bl_Type;
