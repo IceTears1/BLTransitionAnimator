@@ -9,6 +9,7 @@
 
 //模态跳转
 [self BL_presentViewController:nav AnimatorStyle:bl_Type animated:YES];
+
 //push跳转
 [self.navigationController BL_pushViewController:vc AnimatorStyle:bl_Type animated:YES];
 
