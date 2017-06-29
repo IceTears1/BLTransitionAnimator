@@ -1,5 +1,7 @@
 # BLTransitionAnimator
 
+pod 导入 pod 'BLTransitionAnimation', '~> 1.0.3'
+
 使用方法
 
 1>导入头文件
