@@ -29,6 +29,7 @@ BLTransitionAnimatorCustom//自定义动画
 BLDIYTrasitionAnimation.m
 
 5>注意事项
+https://github.com/IceTears1/BLTransitionAnimator/blob/master/1457407017129336.gif
 Presentation/push 时候
 fromView = The presenting view
 toView   = The presented view
