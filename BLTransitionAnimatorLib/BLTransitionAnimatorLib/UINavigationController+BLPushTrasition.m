@@ -28,7 +28,7 @@ BLTransitionAnimatorStyle bl_Type;
     
     return [[BLPushTransitionAnimator alloc]initWithTargetStyle:bl_Type];
 }
--(void)BL_pushViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag{
+-(void)bl_pushViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag{
     
     self.delegate = self;
     bl_Type = type;

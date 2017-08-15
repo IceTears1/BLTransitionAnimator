@@ -1,6 +1,6 @@
 # BLTransitionAnimator
 
-pod 导入 pod 'BLTransitionAnimation', '~> 1.0.3'
+pod 导入 pod 'BLTransitionAnimation'
 
 使用方法
 
@@ -10,10 +10,10 @@ pod 导入 pod 'BLTransitionAnimation', '~> 1.0.3'
 2>跳转方法
 
 //模态跳转
-[self BL_presentViewController:nav AnimatorStyle:bl_Type animated:YES];
+[self bl_presentViewController:nav AnimatorStyle:bl_Type animated:YES];
 
 //push跳转
-[self.navigationController BL_pushViewController:vc AnimatorStyle:bl_Type animated:YES];
+[self.navigationController bl_pushViewController:vc AnimatorStyle:bl_Type animated:YES];
 
 3>目前只提供了4中+一个自定义的方法  自定义动画应该能满足大部分人的需求
 typedef NS_OPTIONS(NSUInteger, BLTransitionAnimatorStyle) {

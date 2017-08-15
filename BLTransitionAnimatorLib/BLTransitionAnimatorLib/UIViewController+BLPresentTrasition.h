@@ -12,5 +12,5 @@
 @interface UIViewController (BLPresentTrasition)<UIViewControllerTransitioningDelegate>
 
 
-- (void)BL_presentViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag;
+- (void)bl_presentViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag;
 @end

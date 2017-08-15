@@ -86,7 +86,7 @@
   
     PushSecondVC *vc = [[PushSecondVC alloc]init];
 
-    [self.navigationController BL_pushViewController:vc AnimatorStyle:bl_Type animated:YES];
+    [self.navigationController bl_pushViewController:vc AnimatorStyle:bl_Type animated:YES];
     
 }
 - (void)didReceiveMemoryWarning {

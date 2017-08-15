@@ -45,7 +45,7 @@ BLTransitionAnimatorStyle _bl_Type;
 
 
 
--(void)BL_presentViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag{
+-(void)bl_presentViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag{
     vc.transitioningDelegate = self;
     _bl_Type = type;
     [self presentViewController:vc animated:flag completion:^{

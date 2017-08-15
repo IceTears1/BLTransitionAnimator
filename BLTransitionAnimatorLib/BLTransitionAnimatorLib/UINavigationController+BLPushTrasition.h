@@ -13,6 +13,6 @@
 @interface UINavigationController (BLPushTrasition)<UINavigationControllerDelegate>
 
 
-- (void)BL_pushViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag;
+- (void)bl_pushViewController:(UIViewController *)vc AnimatorStyle:(BLTransitionAnimatorStyle)type animated:(BOOL)flag;
 
 @end

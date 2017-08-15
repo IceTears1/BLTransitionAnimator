@@ -84,7 +84,7 @@
 //    [self presentViewController:nav animated:YES completion:^{
 //        
 //    }];
-    [self BL_presentViewController:nav AnimatorStyle:bl_Type animated:YES];
+    [self bl_presentViewController:nav AnimatorStyle:bl_Type animated:YES];
     
 }
 
